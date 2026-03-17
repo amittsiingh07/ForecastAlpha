@@ -1,0 +1,17 @@
+# Secret Keys
+.env
+.env.local
+
+# Frontend (Next.js)
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# Backend (Python)
+__pycache__/
+venv/
+env/
+*.pyc
+.pytest_cache/

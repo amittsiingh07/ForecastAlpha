@@ -1,0 +1,55 @@
+/*
+ * dashboard.css
+ * Place at: /styles/dashboard.css
+ * No import needed — styles are self-contained in index.js and PillNav.js
+ * This file exists only for optional global overrides.
+ *
+ * If you use a Next.js _app.js or global.css, you can add this there instead.
+ */
+
+/* Geist is loaded via Google Fonts in index.js.
+   If you prefer local Vercel Geist, install it:
+   npm install geist
+   Then in _app.js: import { GeistSans, GeistMono } from 'geist/font'
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #000;
+  color: #e2e8f0;
+  font-family:
+    "Geist",
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Selection */
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #fff;
+}
